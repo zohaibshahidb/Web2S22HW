@@ -1,0 +1,131 @@
+/* =============
+   Section 4
+============= */
+#section-4 {
+
+    #kit-vs-index {
+        display: grid;
+        grid-gap: 3%;
+        grid-template-areas: "file-title file-title file-title"
+            "file-nav file-nav file-nav"
+            "left middle right";
+        grid-template-columns: 41% auto 41%;
+        text-align: center;
+
+        #file-title {
+            grid-area: file-title;
+        }
+
+        #file-nav {
+            grid-area: file-nav;
+
+            nav {
+                margin-bottom: 40px;
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+                        border-right: 1px solid $white;
+
+                        button {
+                            background-color: $teal;
+                            border: none;
+                            color: $white;
+                            padding: 10px 20px;
+                            transition: 0.25s;
+
+                            i {
+                                color: $dark-teal;
+                                padding: 0 10px;
+                            }
+                        }
+
+                        button:hover {
+                            background-color: $dark-teal;
+
+                            i {
+                                color: $white;
+                            }
+                        }
+
+                        .selected-file {
+                            background-color: $medium-teal !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .kit-title-container {
+            padding-bottom: 10px;
+
+            h1 {
+                color: $teal;
+            }
+
+            p {
+                font-size: rem-calc(14);
+                font-weight: 300;
+            }
+        }
+
+        article {
+            section {
+                border-bottom: 1px solid $grey;
+                border-top: 1px solid $grey;
+                margin-bottom: 20px;
+                padding: 10px 0;
+
+                p {
+                    font-size: rem-calc(14);
+                }
+
+                .folder-container {
+                    display: flex;
+                    justify-content: center;
+
+                    div {
+                        display: flex;
+
+                        i {
+                            font-size: rem-calc(25);
+                            margin-right: 10px;
+                            padding: 0;
+                        }
+
+                        h2 {
+                            font-size: rem-calc(20);
+                            font-weight: 400;
+                        }
+                    }
+
+                    i {
+                        padding: 5px 10px 0;
+                    }
+                }
+            }
+        }
+
+        #conversion-icon {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            >div {
+                align-items: center;
+                border: 3px solid $grey;
+                border-radius: 100px;
+                color: $teal;
+                display: flex;
+                font-size: rem-calc(45);
+                height: 100px;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100px;
+            }
+        }
+    }
+
+}
