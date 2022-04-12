@@ -2,6 +2,7 @@
 /* =============
     Mixins
 ============= */
+@use "sass:math";
 /* ---------------- Font Sizing ---------------- */
 // ----
 // rem mixins
@@ -18,17 +19,21 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
     @return if($test-list==$list, space, comma);
 }
 @mixin rem-base($zoom: 100%) {
-    font-size: $zoom / 16px * $rem-base;
+    //font-size: $zoom / 16px * $rem-base;
+
+    font-size: math.div($zoom, 16px) *  $rem-base;
 }
 @function rem-convert($to, $values...) {
     $result: ();
     $separator: rem-separator($values);
     @each $value in $values {
         @if type-of($value)== "number" and unit($value)=="rem" and $to=="px" {
-            $result: append($result, $value / 1rem * $rem-base, $separator);
+            // $result: append($result, $value / 1rem * $rem-base, $separator);
+            $result: append($result, math.div($value, 1rem )* $rem-base, $separator);
         } @else
         if type-of($value)=="number" and unit($value)=="px" and $to=="rem" {
-            $result: append($result, $value / ($rem-base / 1rem), $separator);
+            // $result: append($result, $value / ($rem-base / 1rem), $separator);
+            $result: append($result, math.div($value, math.div($rem-base, 1rem)), $separator);
         } @else
         if type-of($value)=="list" {
             $result: append($result, rem-convert($to, $value...), $separator);
@@ -57,7 +62,9 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
 // $base-line-height: 150%;
 // It strips the unit of measure and returns it
 @function strip-unit($num) {
-    @return $num / ($num * 0 + 1);
+    // @return $num / ($num * 0 + 1);
+
+    @return math.div($num, ($num * 0 + 1));
 }
 // New Syntax, allows to optionally calculate on a different base value to counter compounding effect of em\'s.
 // Call with 1, 2, 3 or 4 parameters, \'px\' is not required but supported
@@ -69,7 +76,8 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
 // If you require to comma separate your list
 // rem-calc((16px, 32px, 48), 8px);
 @function convert-to-rem($value, $base-value: $rem-base) {
-    $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+    // $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+    $value: math.div(strip-unit($value), strip-unit($base-value)) * 1rem;
     @if ($value==0rem) {
         $value: 0;
     }
@@ -142,3 +150,10 @@ html {
 // @include xl{
 //     grid-template-columns: repeat(4, 1fr);
 // }
+
+// Super Extra large devices
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+}
