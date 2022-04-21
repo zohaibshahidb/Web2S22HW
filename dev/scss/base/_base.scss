@@ -2,4 +2,31 @@
     Base
 ============= */
 
+body{
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+        }
+    }
+}
 
+.content-section{
+    min-height: 100vh;
+
+    .container-grid{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". grid-content .";
+        min-height: 100vh;
+
+        .grid-content{
+            grid-area: grid-content;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
