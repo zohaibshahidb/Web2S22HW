@@ -1,3 +1,27 @@
 /* =============
     Header
 ============= */
+header{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+
+    div{
+        grid-area: header;
+       
+        section{
+            img{
+    
+            }
+        }
+        nav{
+            ul{
+                li{
+    
+                }
+            }
+        }
+    }
+
+   
+}
