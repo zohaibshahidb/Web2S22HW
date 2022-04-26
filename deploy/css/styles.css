@@ -384,5 +384,14 @@ textarea {
 /* =============
     percs
 ============= */
-#percs > ul li img {
-  width: 100%; }
+#percs > ul {
+  display: grid;
+  gap: 16px;
+  grid-template-rows: repeat(5); }
+  @media (min-width: 768px) {
+    #percs > ul {
+      grid-template-columns: 4, 360;
+      grid-template-rows: 3, 433;
+      grid-template-areas: "p1 p2" "p3 p4" "p5"; } }
+  #percs > ul > li img {
+    width: 100%; }
