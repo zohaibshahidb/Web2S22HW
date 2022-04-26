@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<section id="header">
+<section id="head">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,35 +9,29 @@
 </section>
 
 <body>
-    <section id="header">
+    <section id="header" class="global-css-grid">
         <div>
             <section>
                 <img src="img//header/cadillaclogo.svg" alt="header logo">
             </section>
-            <nav>
+            <!-- <nav>
                 <ul>
                     <li></li>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
       
     </section>
 
-    <section id="searchinv">
+    <section id="searchinv" class="global-css-grid">
         <div>
-                <section class="searchtxt">
-                    <h6>
-                        search our inventory
-                    </h6>
+                <section id="searchtxt" class="global-css-grid">
+                    <form action="#">
+                    <input type="text" placeholder="Search our inventory"></input>
+                    <button><img src="img/searchinv/searchshape.svg" alt="search icon"></button>
+                    </form>
+                    </section>
                 </section>
-               
-                <section class="search">
-                    <img src="img/searchinv/Shape.svg" alt="search icon">
-                </section>
-              
-            
-    
-    
         </div>
      
         
@@ -45,98 +39,170 @@
     
     
 
-    <section class="hero1">
-        <img src="img/pictures/heroimg1.jpeg" alt="hero image 1">
-        <h1>Cadillac 2021 CT4</h1>
-        <h2>Athletic and handsomely styled</h2>
-        <img src="img/assets/arrowside.svg" alt="side arrow">
+    <section id="hero1" class="globalgrid">
     
-        <h3>Location: Princeton, New Jersey, USA</h3>
-        <h3>Price: See Catalog</h3>
-        <img src="img/assets/arrowside.svg" alt="side arrow">
+        <img src="img/pictures/heroimg1.jpeg" alt="hero image 1" id="hero-img">
+    
+    
+        <section id="herolink1" class="global-css-grid">
+            <div>
+                <h2>Cadillac 2021 CT4</h2>
+                <h4>Athletic and handsomely styled</h4>
+                <button><img src="img/assets/arrowside.svg" alt="side arrow"></button>
+            </div>
+        </section>
+        
+        <section id="herolink2" class="global-css-grid">
+            <div>
+                <p>Location: Princeton, New Jersey, USA</p>
+                <p>Price: See Catalog</p>
+                <button><img src="img/assets/arrowside.svg" alt="side arrow"></button>
+            </div>
+        </section>
+       
     </section>
 
-    <section id="action">
-    <h1>We deliver to your home!</h1>
-        <img src="img/assets/actionicon1.png" alt="aicon1">
-        <h3>Start here</h3>
+    <section id="action1" class="global-css-grid">
+    <div>
     
-    <h1>Need repairs?</h1>
-        <img src="img/assets/actionicon2.png" alt="aicon2">
-        <h3>Book now</h3>
+        <section id="action1" class="action-content">
+            <div>
+                <section>
+                    <h2>We deliver to your home!</h2>
+                    <button>Start here</button>
+                </section>
+                <aside>
+                    <img src="img/assets/actionicon1.png" alt="aicon1">
+                </aside>
+            </div>
+        </section>
+    
+    <section id="action2" class="action-content">
+        <div>
+        <section>
+            <h2>Need repairs?</h2>
+            <button>Book now</button>
+            <aside>
+                <img src="img/assets/actionicon2.png" alt="aicon2">
+            </aside>
+        </section>
+        </div>
+    </section>
         
     </section>
 
     <section id="hero2">
     
-        <img src="img/pictures/hero2 1.jpeg" alt="hero 2 1">
-        <img src="img/pictures/hero2 2.jpeg" alt="hero 2 2">
+        <img src="img/pictures/mobile/hero-2-mobile.png" alt="hero 2 1">
+        <img src="img/pictures/mobile/hero-3-mobile.png" alt="hero 2 2">
     
     </section>
 
-    <section>
-    <h2>What's New</h2>
+    <section id="percs">
     
-        <img src="img/pictures/perc1.jpeg" alt="perc1">
-        <h1>All New DOHC 16-valve Engine!</h1>
-        <h3>The all new DOHC 16-valve engine lets you go up to more than 350 horse power! Drive fast and show off to your friends in a drag race!</h3>
-        <h2>Read More</h2>
+        <section id="whatsnew" class="global-css-grid">
+            <div>
+                <h2 id="whats-new">What's New</h2>
+            </div>
+        </section>
     
-        <img src="img/pictures/perc2.jpeg" alt="perc2">
-        <h1>Leather And Platnium Interiors</h1>
-        <h3>The crazy new interiors are all leather and platnium that look sleek and beautifl. This doesn’t just look like a luxury car. It is a luxury car.</h3>
-        <h2>Read More</h2>
+        <ul>
+            <li>
+                <img src="img/pictures/mobile/perc1.png" alt="perc1">
+                <section id="perc1" class="global-css-grid">
+                    <div>
+                        <h1>All New DOHC 16-valve Engine!</h1>
+                        <h3>The all new DOHC 16-valve engine lets you go up to more than 350 horse power! Drive fast and show off to your friends in a drag race!</h3>
+                        <button>Read More</button>
+                    </div>
+                </section>
+            </li>
+    
+            <li>
+                <img src="img/pictures/mobile/perc2.png" alt="perc2">
+                <section id="perc2" class="global-css-grid">
+                    <div>
+                        <h1>Leather And Platnium Interiors</h1>
+                        <h3>The crazy new interiors are all leather and platnium that look sleek and beautifl. This doesn’t just look like a luxury car. It is a luxury car.</h3>
+                        <button>Read More</button>
+                    </div>
+                </section> 
+            </li>
+    
+            <li>
+                <img src="img/pictures/mobile/perc3.png" alt="perc3">
+                <section id="perc3" class="global-css-grid">
+                    <div>
+                        <h1>Back Seats that are Backed up</h1>
+                        <h3>Everyone loves leg room. The last thing you want is have to sit curled up on a four hour drive. We’ve added adujstable seating.</h3>
+                        <button>Read More</button>
+                    </div>
+                </section>
+            </li>
+    
+            <li>
+                <img src="img/pictures/mobile/perc4.png" alt="perc4">
+                <section id="perc4" class="global-css-grid">
+                    <div>
+                        <h1>Custom, Sleek Interior</h1>
+                        <h3>Your car. Your way. Now you can pick and choose the colors of your interior and well bring a car to you with your colors.</h3>
+                        <button>Read More</button>
+                    </div>
+                </section>
+            </li>
+    
+            <li>
+                <img src="img/pictures/mobile/perc5.png" alt="perc5">
+                <section id="perc5" class="global-css-grid">
+                    <div>
+                        <h1>All New DOHC 16-valve Engine</h1>
+                        <h3>Talk about limits. We don’t like limits, which is why we put in a DOCH 16-valve engine with more that 350 horse power. This is an athletic luxury car.</h3>
+                        <button>Read More</button>
+                    </div>
+                </section>
+            </li>
     
     
-        <img src="img/pictures/perc3.jpeg" alt="perc3">
-        <h1>Back Seats that are Backed up</h1>
-        <h3>Everyone loves leg room. The last thing you want is have to sit curled up on a four hour drive. We’ve added adujstable seating.</h3>
-        <h2>Read More</h2>
+    
+        </ul>
     
     
-        <img src="img/pictures/perc4.jpg" alt="perc4">
-        <h1>Custom, Sleek Interior</h1>
-        <h3>Your car. Your way. Now you can pick and choose the colors of your interior and well bring a car to you with your colors.</h3>
-        <h2>Read More</h2>
-    
-    
-        <img src="img/pictures/perc5.jpeg" alt="perc5">
-        <h1>All New DOHC 16-valve Engine</h1>
-        <h3>Talk about limits. We don’t like limits, which is why we put in a DOCH 16-valve engine with more that 350 horse power. This is an athletic luxury car.</h3>
-        <h2>Read More</h2>
     
     </section>
 
-    <footer>
-          <h2>Locations</h2>
+    <section id="footer" class="global-css-grid">
+        <div>
+            <h2>Locations</h2>
     
-          <h3>New Jersey</h3>
-             <img src="img/footer/arrow.svg" alt="arrow">
-          <p>00 Renaissance Blvd, NJ 08648</p>
-          <img src="img/footer/mobile.svg" alt="mobile">
-          <p>(732) 821-1103</p>
-    
-    
-          <h3>Philadelphia</h3>
-              <img src="img/footer/arrow.svg" alt="arrow">
-         <p>1441 Ridge Pike, PA 19462</p>
-             <img src="img/footer/mobile.svg" alt="mobile">
-         <p>(610) 272-5545</p>
-    
-    
-         <h3>New York</h3>
-             <img src="img/footer/arrow.svg" alt="arrow">
-         <p>720 Northern Blvd, NY 11021</p>
-             <img src="img/footer/mobile.svg" alt="mobile">
-         <p>(516) 466-6200</p>
-    
-    <h1>Newsletter Signup</h1>
-        <h3>Email adress</h3>
-        <p>Sign Up</p>
-    
-    <h2>Follow Us</h2>
-    
-    </footer>
+            <h3>New Jersey</h3>
+               <img src="img/footer/arrow.svg" alt="arrow">
+            <p>00 Renaissance Blvd, NJ 08648</p>
+            <img src="img/footer/mobile.svg" alt="mobile">
+            <p>(732) 821-1103</p>
+      
+      
+            <h3>Philadelphia</h3>
+                <img src="img/footer/arrow.svg" alt="arrow">
+           <p>1441 Ridge Pike, PA 19462</p>
+               <img src="img/footer/mobile.svg" alt="mobile">
+           <p>(610) 272-5545</p>
+      
+      
+           <h3>New York</h3>
+               <img src="img/footer/arrow.svg" alt="arrow">
+           <p>720 Northern Blvd, NY 11021</p>
+               <img src="img/footer/mobile.svg" alt="mobile">
+           <p>(516) 466-6200</p>
+      
+      <h1>Newsletter Signup</h1>
+          <h3>Email adress</h3>
+          <p>Sign Up</p>
+      
+      <h2>Follow Us</h2>
+      
+        </div>
+          
+    </section>
 
     <script src="js/scripts-min.js"></script>
 </body>

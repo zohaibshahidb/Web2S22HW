@@ -1,0 +1,27 @@
+/* =============
+    action1
+============= */
+
+#action1{
+    >div{
+
+        .action-content{
+            >div{
+                display: grid;
+                grid-template-columns: 75% auto;
+        
+                section{
+        
+                }
+                aside{
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        
+        }
+        
+        }
+        
+    }

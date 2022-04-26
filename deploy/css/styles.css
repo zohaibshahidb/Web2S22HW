@@ -317,25 +317,18 @@ template {
 /* =============
     Base
 ============= */
-body ul {
-  margin: 0;
-  padding: 0; }
-  body ul li {
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
     list-style: none; }
 
-.content-section {
-  min-height: 100vh; }
-  .content-section .container-grid {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". grid-content .";
-    min-height: 100vh; }
-    .content-section .container-grid .grid-content {
-      grid-area: grid-content;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+.global-css-grid {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". global-grid ."; }
+  .global-css-grid > div {
+    grid-area: global-grid; }
 
 /* =============
     Typography
@@ -364,28 +357,32 @@ textarea {
 /* =============
     Header
 ============= */
-#header {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header ."; }
-  #header div {
-    grid-area: header; }
-
 /* =============
     Footer
 ============= */
 /* =============
     hero1
 ============= */
-.hero1 img {
+#hero1 img {
   width: 100%; }
 
 /* =============
-    searchinv
+    action1
 ============= */
-#searchinv {
+#action1 > div .action-content > div {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". searchinv ."; }
-  #searchinv div {
-    grid-area: searchinv; }
+  grid-template-columns: 75% auto; }
+  #action1 > div .action-content > div aside img {
+    width: 100px; }
+
+/* =============
+    hero2
+============= */
+#hero2 img {
+  width: 100%; }
+
+/* =============
+    percs
+============= */
+#percs > ul li img {
+  width: 100%; }

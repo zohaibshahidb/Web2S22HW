@@ -1,24 +1,24 @@
-/* =============
-    searchinv
-============= */
-#searchinv{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". searchinv .";
+// /* =============
+//     searchinv
+// ============= */
+// #searchinv{
+//     display: grid;
+//     grid-template-columns: 16px auto 16px;
+//     grid-template-areas: ". searchinv .";
 
-    div{
-        grid-area: searchinv;
+//     div{
+//         grid-area: searchinv;
        
-        section{
-            h6{
+//         section{
+//             h6{
 
-            }
-            img{
+//             }
+//             img{
     
-            }
-        }
+//             }
+//         }
     
-    }
+//     }
 
    
-}
+// }
