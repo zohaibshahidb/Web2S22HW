@@ -360,11 +360,27 @@ textarea {
 /* =============
     Footer
 ============= */
+#searchinv > div {
+  display: grid;
+  grid-template-columns: auto 50px; }
+  #searchinv > div #searchtxt {
+    width: 100%; }
+
 /* =============
     hero1
 ============= */
 #hero1 img {
   width: 100%; }
+
+#hero1 article #herolink1 {
+  background-color: aquamarine; }
+
+#hero1 article #herolink2 {
+  background-color: beige; }
+
+#hero1 article section > div {
+  display: grid;
+  grid-template-columns: auto 30px; }
 
 /* =============
     action1
@@ -373,7 +389,7 @@ textarea {
   display: grid;
   grid-template-columns: 75% auto; }
   #action1 > div .action-content > div aside img {
-    width: 100px; }
+    width: 100%; }
 
 /* =============
     hero2

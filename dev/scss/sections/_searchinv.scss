@@ -1,24 +1,17 @@
 // /* =============
 //     searchinv
 // ============= */
-// #searchinv{
-//     display: grid;
-//     grid-template-columns: 16px auto 16px;
-//     grid-template-areas: ". searchinv .";
 
-//     div{
-//         grid-area: searchinv;
-       
-//         section{
-//             h6{
+#searchinv{
+    >div{
+        
+            display: grid;
+            grid-template-columns: auto 50px;
 
-//             }
-//             img{
-    
-//             }
-//         }
-    
-//     }
+            #searchtxt{
+                width: 100%;
+            }
 
-   
-// }
+        
+    }
+}

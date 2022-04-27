@@ -3,7 +3,25 @@
 ============= */
 
 #hero1{
+
     img{
         width: 100%;
     } 
+
+    article{
+        #herolink1{
+            background-color: aquamarine;
+        }
+        #herolink2{
+            background-color: beige;
+        }
+    
+
+        section{
+            >div{
+                display: grid;
+                grid-template-columns: auto 30px;
+            }
+        }
+    }
 }
