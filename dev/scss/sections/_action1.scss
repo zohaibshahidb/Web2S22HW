@@ -5,10 +5,17 @@
 #action1{
     >div{
 
+        @include md{
+            gap: 16px;
+            display: grid;
+            grid-template-columns: 48% auto; 
+        }
+
         .action-content{
             >div{
+
                 display: grid;
-                grid-template-columns: 75% auto;
+                grid-template-columns: auto 120px;
         
                 section{
         
@@ -22,6 +29,6 @@
         
         }
         
-        }
-        
     }
+        
+}

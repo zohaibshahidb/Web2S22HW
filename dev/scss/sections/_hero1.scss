@@ -9,6 +9,12 @@
     } 
 
     article{
+
+        @include md{
+            display: grid;
+            grid-template-columns: 48% auto; 
+        }
+
         #herolink1{
             background-color: aquamarine;
         }

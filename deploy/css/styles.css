@@ -372,6 +372,11 @@ textarea {
 #hero1 img {
   width: 100%; }
 
+@media (min-width: 768px) {
+  #hero1 article {
+    display: grid;
+    grid-template-columns: 48% auto; } }
+
 #hero1 article #herolink1 {
   background-color: aquamarine; }
 
@@ -385,9 +390,15 @@ textarea {
 /* =============
     action1
 ============= */
+@media (min-width: 768px) {
+  #action1 > div {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 48% auto; } }
+
 #action1 > div .action-content > div {
   display: grid;
-  grid-template-columns: 75% auto; }
+  grid-template-columns: auto 120px; }
   #action1 > div .action-content > div aside img {
     width: 100%; }
 
@@ -400,5 +411,28 @@ textarea {
 /* =============
     percs
 ============= */
-#percs > ul li img {
-  width: 100%; }
+#percs > ul {
+  display: grid;
+  gap: 16px; }
+  @media (min-width: 768px) {
+    #percs > ul {
+      grid-area: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "p1 p1 p2 p2" "p3 p3 p4 p4" ". p5 p5 ."; } }
+  @media (min-width: 768px) {
+    #percs > ul #p1 {
+      grid-area: p1; } }
+  @media (min-width: 768px) {
+    #percs > ul #p2 {
+      grid-area: p2; } }
+  @media (min-width: 768px) {
+    #percs > ul #p3 {
+      grid-area: p3; } }
+  @media (min-width: 768px) {
+    #percs > ul #p4 {
+      grid-area: p4; } }
+  @media (min-width: 768px) {
+    #percs > ul #p5 {
+      grid-area: p5; } }
+  #percs > ul > li img {
+    width: 100%; }
