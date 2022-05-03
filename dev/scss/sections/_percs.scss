@@ -3,12 +3,29 @@
 ============= */
 
 #percs{
+
+article{
+
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". percs .";
+    }
+
+    @include xxl{
+        display: grid;
+        grid-template-columns: auto 1080px auto;
+        grid-template-areas: ". percs .";
+    }
+
+
+
     >ul{
         display: grid;
         gap: 16px;
 
         @include md{
-            grid-area: grid;
+            grid-area: percs;
             grid-template-columns: repeat(4, 1fr);
             grid-template-areas:
             "p1 p1 p2 p2"
@@ -17,30 +34,45 @@
         }
 
         #p1{
+            #perc1{
+                padding: 16px;
+            }
             @include md{
                 grid-area: p1;
             }
         }
 
         #p2{
+            #perc2{
+                padding: 16px;
+            }
             @include md{
                 grid-area: p2;
             }
         }
 
         #p3{
+            #perc3{
+                padding: 16px;
+            }
             @include md{
                 grid-area: p3;
             }
         }
 
         #p4{
+            #perc4{
+                padding: 16px;
+            }
             @include md{
                 grid-area: p4;
             }
         }
 
         #p5{
+            #perc5{
+                padding: 16px;
+            }
             @include md{
                 grid-area: p5;
             }
@@ -56,5 +88,8 @@
             
         }
     }
+}
+
+
 
 }

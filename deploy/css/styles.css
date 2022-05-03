@@ -333,6 +333,14 @@ ul {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
 /* =============
     Buttons
 ============= */
@@ -375,7 +383,11 @@ textarea {
 @media (min-width: 768px) {
   #hero1 article {
     display: grid;
-    grid-template-columns: 48% auto; } }
+    grid-template-columns: 50% auto; }
+    #hero1 article #herolink1-txt {
+      padding: 16px; }
+    #hero1 article #herolink2-txt {
+      padding: 16px; } }
 
 #hero1 article #herolink1 {
   background-color: aquamarine; }
@@ -394,13 +406,20 @@ textarea {
   #action1 > div {
     gap: 16px;
     display: grid;
-    grid-template-columns: 48% auto; } }
+    grid-template-columns: 50% auto; } }
 
-#action1 > div .action-content > div {
-  display: grid;
-  grid-template-columns: auto 120px; }
-  #action1 > div .action-content > div aside img {
-    width: 100%; }
+#action1 > div .action-content {
+  margin: 16px;
+  background-color: aquamarine; }
+  #action1 > div .action-content #action1d {
+    padding: 16px; }
+  #action1 > div .action-content #action2d {
+    padding: 16px; }
+  #action1 > div .action-content > div {
+    display: grid;
+    grid-template-columns: auto 120px; }
+    #action1 > div .action-content > div aside img {
+      width: 100%; }
 
 /* =============
     hero2
@@ -411,28 +430,50 @@ textarea {
 /* =============
     percs
 ============= */
-#percs > ul {
+@media (min-width: 768px) {
+  #percs article {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". percs ."; } }
+
+@media (min-width: 1440px) {
+  #percs article {
+    display: grid;
+    grid-template-columns: auto 1080px auto;
+    grid-template-areas: ". percs ."; } }
+
+#percs article > ul {
   display: grid;
   gap: 16px; }
   @media (min-width: 768px) {
-    #percs > ul {
-      grid-area: grid;
+    #percs article > ul {
+      grid-area: percs;
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas: "p1 p1 p2 p2" "p3 p3 p4 p4" ". p5 p5 ."; } }
+  #percs article > ul #p1 #perc1 {
+    padding: 16px; }
   @media (min-width: 768px) {
-    #percs > ul #p1 {
+    #percs article > ul #p1 {
       grid-area: p1; } }
+  #percs article > ul #p2 #perc2 {
+    padding: 16px; }
   @media (min-width: 768px) {
-    #percs > ul #p2 {
+    #percs article > ul #p2 {
       grid-area: p2; } }
+  #percs article > ul #p3 #perc3 {
+    padding: 16px; }
   @media (min-width: 768px) {
-    #percs > ul #p3 {
+    #percs article > ul #p3 {
       grid-area: p3; } }
+  #percs article > ul #p4 #perc4 {
+    padding: 16px; }
   @media (min-width: 768px) {
-    #percs > ul #p4 {
+    #percs article > ul #p4 {
       grid-area: p4; } }
+  #percs article > ul #p5 #perc5 {
+    padding: 16px; }
   @media (min-width: 768px) {
-    #percs > ul #p5 {
+    #percs article > ul #p5 {
       grid-area: p5; } }
-  #percs > ul > li img {
+  #percs article > ul > li img {
     width: 100%; }

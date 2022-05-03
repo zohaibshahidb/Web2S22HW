@@ -11,8 +11,14 @@
     article{
 
         @include md{
+            #herolink1-txt{
+                padding: 16px;
+            }
+            #herolink2-txt{
+                padding: 16px;
+            }
             display: grid;
-            grid-template-columns: 48% auto; 
+            grid-template-columns: 50% auto; 
         }
 
         #herolink1{

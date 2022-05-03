@@ -8,12 +8,20 @@
         @include md{
             gap: 16px;
             display: grid;
-            grid-template-columns: 48% auto; 
+            grid-template-columns: 50% auto; 
         }
 
         .action-content{
+            margin: 16px;
+            background-color: aquamarine;
+            #action1d{
+                padding: 16px;
+            }
+            #action2d{
+                padding: 16px;
+            }
             >div{
-
+                
                 display: grid;
                 grid-template-columns: auto 120px;
         

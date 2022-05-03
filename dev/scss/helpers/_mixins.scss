@@ -136,3 +136,12 @@ html {
 // @include xl{
 //     grid-template-columns: repeat(4, 1fr);
 // }
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+}
+//Usage
+// @include xl{
+//     grid-template-columns: repeat(4, 1fr);
+// }
