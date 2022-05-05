@@ -1,9 +1,57 @@
 /* =============
     hero2
 ============= */
+.show-lg{
+display: none;
+    @include xxl{
+    display: grid;
+    }
+}
+
 
 #hero2{
-    img{
-        width: 100%;
-    } 
+
+    ul{
+        img{
+            width: 100%;
+        }
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+
+        @include lg{
+            grid-template-columns: 65% auto;
+        }
+
+        @include xxl{
+            grid-template-columns: 60% auto;
+            grid-template-areas: 
+            "g1 g2"
+            "g1 g3";
+        }
+
+        #g1{
+            @include xxl{
+                grid-area: g1;
+            }
+        }
+
+        #g2{
+            @include xxl{
+                grid-area: g2;
+            }
+        }
+
+        #g3{
+            @include xxl{
+                grid-area: g3;
+            }
+        }
+
+    }
+
+
+     
 }

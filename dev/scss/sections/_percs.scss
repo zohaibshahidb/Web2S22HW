@@ -18,7 +18,7 @@ article{
         grid-template-areas: ". percs .";
     }
 
-    @include xxl{
+    @include xl{
         display: grid;
         grid-template-columns: auto 1080px auto;
         grid-template-areas: ". percs .";
@@ -40,6 +40,7 @@ article{
         }
 
         #p1{
+            background-color: var(--cadlightgrey);
             #perc1{
                 padding: 16px;
             }
@@ -49,6 +50,7 @@ article{
         }
 
         #p2{
+            background-color: var(--cadlightgrey);
             #perc2{
                 padding: 16px;
             }
@@ -58,6 +60,7 @@ article{
         }
 
         #p3{
+            background-color: var(--cadlightgrey);
             #perc3{
                 padding: 16px;
             }
@@ -67,6 +70,7 @@ article{
         }
 
         #p4{
+            background-color: var(--cadlightgrey);
             #perc4{
                 padding: 16px;
             }
@@ -76,6 +80,7 @@ article{
         }
 
         #p5{
+            background-color: var(--cadlightgrey);
             #perc5{
                 padding: 16px;
             }

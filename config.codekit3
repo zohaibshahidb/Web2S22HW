@@ -98,19 +98,6 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/deploy\/img\/pictures\/2021-cadillac-ct4-front-angle-view-carbuzz-628765.jpeg" : {
-      "ft" : 16384,
-      "iS" : 62066,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/pictures\/2021-cadillac-ct4-front-angle-view-carbuzz-628765.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/pictures\/hero2 1.jpeg" : {
       "ft" : 16384,
       "iS" : 419201,
@@ -130,6 +117,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/pictures\/hero2 2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/pictures\/hero2 3.jpeg" : {
+      "ft" : 16384,
+      "iS" : 62066,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pictures\/hero2 3.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -172,6 +172,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/pictures\/Mobile\/hero2-3.jpeg" : {
+      "ft" : 16384,
+      "iS" : 62066,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pictures\/Mobile\/hero2-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -417,6 +430,46 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy\/img\/socials\/facebookicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/socials\/facebookicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/socials\/instagramicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/socials\/instagramicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/socials\/twittericon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/socials\/twittericon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/socials\/youtubeicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/socials\/youtubeicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/index.html" : {
       "cB" : 0,

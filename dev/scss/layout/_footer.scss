@@ -1,19 +1,47 @@
 /* =============
     Footer
 ============= */
-footer{
+#footer{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: var(--caddarkgrey);
+    color: var(--white);
     >div{
-        article{
+        
             display: grid;
             gap: 16px;
 
             @include md{
                 grid-template-columns: 50% auto;
+
+                grid-template-areas: 
+                "locations newsletter"
+                ". socials";
+            }
+
+            #locations{
+
+                @include md{
+                    grid-area: locations;
+
+                }
+            }
+
+            #newsletter{
+                @include md{
+                    grid-area: newsletter;
+                }
+            }
+
+            #socials{
+                @include md{
+                    grid-area: socials;
+                }
             }
 
 
 
-            }
+            
         }
     }
 

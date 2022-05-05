@@ -22,10 +22,17 @@
         }
 
         #herolink1{
-            background-color: aquamarine;
+            background-color: var(--cadgreen);
+            >div{
+                section{
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
         }
         #herolink2{
-            background-color: beige;
+            background-color: var(--cadlightgreen);
         }
     
 

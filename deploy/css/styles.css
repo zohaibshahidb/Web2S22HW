@@ -9,6 +9,15 @@ html {
 /* =============
     Variables
 ============= */
+:root {
+  --white: #fff;
+  --black: #000;
+  --cadgreen: #77B5A6;
+  --cadlightgreen: #ACE6C0;
+  --cadwarmgrey: #E0DFD5;
+  --caddarkgrey: #2A3036;
+  --cadlightgrey: #F8F9FA; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -368,15 +377,35 @@ textarea {
 /* =============
     Header
 ============= */
+#header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--caddarkgrey); }
+
 /* =============
     Footer
 ============= */
-footer > div article {
-  display: grid;
-  gap: 16px; }
-  @media (min-width: 768px) {
-    footer > div article {
-      grid-template-columns: 50% auto; } }
+#footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--caddarkgrey);
+  color: var(--white); }
+  #footer > div {
+    display: grid;
+    gap: 16px; }
+    @media (min-width: 768px) {
+      #footer > div {
+        grid-template-columns: 50% auto;
+        grid-template-areas: "locations newsletter" ". socials"; } }
+    @media (min-width: 768px) {
+      #footer > div #locations {
+        grid-area: locations; } }
+    @media (min-width: 768px) {
+      #footer > div #newsletter {
+        grid-area: newsletter; } }
+    @media (min-width: 768px) {
+      #footer > div #socials {
+        grid-area: socials; } }
 #searchinv > div {
   display: grid;
   grid-template-columns: auto 50px; }
@@ -399,10 +428,12 @@ footer > div article {
       padding: 16px; } }
 
 #hero1 article #herolink1 {
-  background-color: aquamarine; }
+  background-color: var(--cadgreen); }
+  #hero1 article #herolink1 > div section p {
+    font-size: 16px; }
 
 #hero1 article #herolink2 {
-  background-color: beige; }
+  background-color: var(--cadlightgreen); }
 
 #hero1 article section > div {
   display: grid;
@@ -419,7 +450,7 @@ footer > div article {
 
 #action1 > div .action-content {
   margin: 16px;
-  background-color: aquamarine; }
+  background-color: var(--cadwarmgrey); }
   #action1 > div .action-content #action1d {
     padding: 16px; }
   #action1 > div .action-content #action2d {
@@ -433,8 +464,39 @@ footer > div article {
 /* =============
     hero2
 ============= */
-#hero2 img {
+.show-lg {
+  display: none; }
+  @media (min-width: 1440px) {
+    .show-lg {
+      display: grid; } }
+#hero2 ul img {
   width: 100%; }
+
+@media (min-width: 768px) {
+  #hero2 ul {
+    display: grid;
+    grid-template-columns: 50% auto; } }
+
+@media (min-width: 1024px) {
+  #hero2 ul {
+    grid-template-columns: 65% auto; } }
+
+@media (min-width: 1440px) {
+  #hero2 ul {
+    grid-template-columns: 60% auto;
+    grid-template-areas: "g1 g2" "g1 g3"; } }
+
+@media (min-width: 1440px) {
+  #hero2 ul #g1 {
+    grid-area: g1; } }
+
+@media (min-width: 1440px) {
+  #hero2 ul #g2 {
+    grid-area: g2; } }
+
+@media (min-width: 1440px) {
+  #hero2 ul #g3 {
+    grid-area: g3; } }
 
 /* =============
     percs
@@ -449,7 +511,7 @@ footer > div article {
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". percs ."; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   #percs article {
     display: grid;
     grid-template-columns: auto 1080px auto;
@@ -463,30 +525,40 @@ footer > div article {
       grid-area: percs;
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas: "p1 p1 p2 p2" "p3 p3 p4 p4" ". p5 p5 ."; } }
-  #percs article > ul #p1 #perc1 {
-    padding: 16px; }
-  @media (min-width: 768px) {
-    #percs article > ul #p1 {
-      grid-area: p1; } }
-  #percs article > ul #p2 #perc2 {
-    padding: 16px; }
-  @media (min-width: 768px) {
-    #percs article > ul #p2 {
-      grid-area: p2; } }
-  #percs article > ul #p3 #perc3 {
-    padding: 16px; }
-  @media (min-width: 768px) {
-    #percs article > ul #p3 {
-      grid-area: p3; } }
-  #percs article > ul #p4 #perc4 {
-    padding: 16px; }
-  @media (min-width: 768px) {
-    #percs article > ul #p4 {
-      grid-area: p4; } }
-  #percs article > ul #p5 #perc5 {
-    padding: 16px; }
-  @media (min-width: 768px) {
-    #percs article > ul #p5 {
-      grid-area: p5; } }
+  #percs article > ul #p1 {
+    background-color: var(--cadlightgrey); }
+    #percs article > ul #p1 #perc1 {
+      padding: 16px; }
+    @media (min-width: 768px) {
+      #percs article > ul #p1 {
+        grid-area: p1; } }
+  #percs article > ul #p2 {
+    background-color: var(--cadlightgrey); }
+    #percs article > ul #p2 #perc2 {
+      padding: 16px; }
+    @media (min-width: 768px) {
+      #percs article > ul #p2 {
+        grid-area: p2; } }
+  #percs article > ul #p3 {
+    background-color: var(--cadlightgrey); }
+    #percs article > ul #p3 #perc3 {
+      padding: 16px; }
+    @media (min-width: 768px) {
+      #percs article > ul #p3 {
+        grid-area: p3; } }
+  #percs article > ul #p4 {
+    background-color: var(--cadlightgrey); }
+    #percs article > ul #p4 #perc4 {
+      padding: 16px; }
+    @media (min-width: 768px) {
+      #percs article > ul #p4 {
+        grid-area: p4; } }
+  #percs article > ul #p5 {
+    background-color: var(--cadlightgrey); }
+    #percs article > ul #p5 #perc5 {
+      padding: 16px; }
+    @media (min-width: 768px) {
+      #percs article > ul #p5 {
+        grid-area: p5; } }
   #percs article > ul > li img {
     width: 100%; }
