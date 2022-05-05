@@ -3,6 +3,12 @@
 ============= */
 
 #percs{
+    #whatsnew{
+        @include xl{
+            grid-template-columns: auto 1080px auto;
+        }
+    }
+
 
 article{
 

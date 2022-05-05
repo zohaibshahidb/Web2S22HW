@@ -1,19 +1,19 @@
 /* =============
     Footer
 ============= */
-header{
-    section{
+footer{
+    >div{
+        article{
+            display: grid;
+            gap: 16px;
+
+            @include md{
+                grid-template-columns: 50% auto;
+            }
 
 
-    }
-    div{
-        ul{
-            li{
-                a{
-                    
-                }
+
             }
         }
     }
 
-}

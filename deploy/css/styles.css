@@ -341,6 +341,9 @@ p {
   padding: 0;
   margin: 0; }
 
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
 /* =============
     Buttons
 ============= */
@@ -368,6 +371,12 @@ textarea {
 /* =============
     Footer
 ============= */
+footer > div article {
+  display: grid;
+  gap: 16px; }
+  @media (min-width: 768px) {
+    footer > div article {
+      grid-template-columns: 50% auto; } }
 #searchinv > div {
   display: grid;
   grid-template-columns: auto 50px; }
@@ -430,6 +439,10 @@ textarea {
 /* =============
     percs
 ============= */
+@media (min-width: 1200px) {
+  #percs #whatsnew {
+    grid-template-columns: auto 1080px auto; } }
+
 @media (min-width: 768px) {
   #percs article {
     display: grid;
