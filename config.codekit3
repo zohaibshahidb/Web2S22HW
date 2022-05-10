@@ -98,12 +98,12 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/deploy\/img\/pictures\/hero2 1.jpeg" : {
+    "\/deploy\/img\/pictures\/hero2-1.jpeg" : {
       "ft" : 16384,
       "iS" : 419201,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/pictures\/hero2 1.jpg",
+      "oAP" : "\/deploy\/img\/pictures\/hero2-1.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -111,12 +111,25 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/pictures\/hero2 2.jpeg" : {
+    "\/deploy\/img\/pictures\/hero2-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 189784,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pictures\/hero2-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/pictures\/hero2-2.jpeg" : {
       "ft" : 16384,
       "iS" : 49056,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/pictures\/hero2 2.jpg",
+      "oAP" : "\/deploy\/img\/pictures\/hero2-2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -124,12 +137,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/pictures\/hero2 3.jpeg" : {
+    "\/deploy\/img\/pictures\/hero2-3.jpeg" : {
       "ft" : 16384,
       "iS" : 62066,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/pictures\/hero2 3.jpg",
+      "oAP" : "\/deploy\/img\/pictures\/hero2-3.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

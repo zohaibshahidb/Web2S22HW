@@ -4,6 +4,22 @@
 
 #hero1{
 
+    #heroimg1{
+        width: 100vw;
+        height: 50vh;
+        background-image: url('../img/pictures/heroimg1.jpeg');
+        background-size: cover;
+        background-position: center center;
+
+        @include lg{
+            height: 70vh;
+        }
+        @include xl{
+            height: 90vh;
+        }
+    }
+    
+
     img{
         width: 100%;
     } 
@@ -22,6 +38,8 @@
         }
 
         #herolink1{
+            padding-top: 12px;
+            padding-bottom: 12px;
             background-color: var(--cadgreen);
             >div{
                 section{
@@ -32,6 +50,8 @@
             }
         }
         #herolink2{
+            padding-top: 12px;
+            padding-bottom: 12px;
             background-color: var(--cadlightgreen);
         }
     

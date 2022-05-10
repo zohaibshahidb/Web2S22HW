@@ -12,43 +12,69 @@ display: none;
 #hero2{
 
     ul{
+
+        display: grid;
+        
+        
+
         img{
             width: 100%;
         }
-
+        
         @include md{
             display: grid;
             grid-template-columns: 50% auto;
+            
         }
 
         @include lg{
             grid-template-columns: 65% auto;
+            
         }
 
         @include xxl{
             grid-template-columns: 60% auto;
+            
             grid-template-areas: 
             "g1 g2"
             "g1 g3";
         }
-
-        #g1{
-            @include xxl{
-                grid-area: g1;
+       
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            #g1{
+                background-image: url('../img/pictures/hero2-1.jpg');
+                background-position: center;
+    
+                @include xxl{
+                    grid-area: g1;
+                }
             }
-        }
-
-        #g2{
-            @include xxl{
-                grid-area: g2;
+    
+            #g2{
+                background-image: url('../img/pictures/hero2-2.jpeg');
+                background-position: center;
+    
+                @include xxl{
+                    grid-area: g2;
+                }
             }
-        }
-
-        #g3{
-            @include xxl{
-                grid-area: g3;
+    
+            #g3{
+                display: none;
+                @include xxl{
+                    display: grid;
+                }
+                background-image: url('../img/pictures/hero2-3.jpeg');
+                background-position: center;
+    
+                @include xxl{
+                    grid-area: g3;
+                }
             }
-        }
+        
+       
 
     }
 

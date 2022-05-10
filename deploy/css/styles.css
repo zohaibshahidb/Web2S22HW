@@ -16,7 +16,8 @@ html {
   --cadlightgreen: #ACE6C0;
   --cadwarmgrey: #E0DFD5;
   --caddarkgrey: #2A3036;
-  --cadlightgrey: #F8F9FA; }
+  --cadlightgrey: #F8F9FA;
+  --cadwarm: #E0DFD5; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -415,6 +416,18 @@ textarea {
 /* =============
     hero1
 ============= */
+#hero1 #heroimg1 {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("../img/pictures/heroimg1.jpeg");
+  background-size: cover;
+  background-position: center center; }
+  @media (min-width: 1024px) {
+    #hero1 #heroimg1 {
+      height: 70vh; } }
+  @media (min-width: 1200px) {
+    #hero1 #heroimg1 {
+      height: 90vh; } }
 #hero1 img {
   width: 100%; }
 
@@ -428,11 +441,15 @@ textarea {
       padding: 16px; } }
 
 #hero1 article #herolink1 {
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: var(--cadgreen); }
   #hero1 article #herolink1 > div section p {
     font-size: 16px; }
 
 #hero1 article #herolink2 {
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: var(--cadlightgreen); }
 
 #hero1 article section > div {
@@ -469,35 +486,46 @@ textarea {
   @media (min-width: 1440px) {
     .show-lg {
       display: grid; } }
-#hero2 ul img {
-  width: 100%; }
-
-@media (min-width: 768px) {
-  #hero2 ul {
-    display: grid;
-    grid-template-columns: 50% auto; } }
-
-@media (min-width: 1024px) {
-  #hero2 ul {
-    grid-template-columns: 65% auto; } }
-
-@media (min-width: 1440px) {
-  #hero2 ul {
-    grid-template-columns: 60% auto;
-    grid-template-areas: "g1 g2" "g1 g3"; } }
-
-@media (min-width: 1440px) {
+#hero2 ul {
+  display: grid;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+  #hero2 ul img {
+    width: 100%; }
+  @media (min-width: 768px) {
+    #hero2 ul {
+      display: grid;
+      grid-template-columns: 50% auto; } }
+  @media (min-width: 1024px) {
+    #hero2 ul {
+      grid-template-columns: 65% auto; } }
+  @media (min-width: 1440px) {
+    #hero2 ul {
+      grid-template-columns: 60% auto;
+      grid-template-areas: "g1 g2" "g1 g3"; } }
   #hero2 ul #g1 {
-    grid-area: g1; } }
-
-@media (min-width: 1440px) {
+    background-image: url("../img/pictures/hero2-1.jpg");
+    background-position: center; }
+    @media (min-width: 1440px) {
+      #hero2 ul #g1 {
+        grid-area: g1; } }
   #hero2 ul #g2 {
-    grid-area: g2; } }
-
-@media (min-width: 1440px) {
+    background-image: url("../img/pictures/hero2-2.jpeg");
+    background-position: center; }
+    @media (min-width: 1440px) {
+      #hero2 ul #g2 {
+        grid-area: g2; } }
   #hero2 ul #g3 {
-    grid-area: g3; } }
-
+    display: none;
+    background-image: url("../img/pictures/hero2-3.jpeg");
+    background-position: center; }
+    @media (min-width: 1440px) {
+      #hero2 ul #g3 {
+        display: grid; } }
+    @media (min-width: 1440px) {
+      #hero2 ul #g3 {
+        grid-area: g3; } }
 /* =============
     percs
 ============= */
